@@ -38,4 +38,9 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  <div class="field" hidden>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id, value: current_user.id %>
+  </div>
+  
 <% end %>

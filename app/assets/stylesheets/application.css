@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+.my-container {
+    position: relative;
+
+}
+
+.my-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}

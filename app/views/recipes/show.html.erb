@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <strong>User:</strong>
+  <%= link_to @recipe.user.name %>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @recipe.name %>
@@ -28,6 +31,10 @@
 <p>
   <strong>Minutes to cook:</strong>
   <%= @recipe.minutes_to_cook %>
+</p>
+<p>
+  <strong> Picture </strong>
+  <%= image_tag(@recipe.picture,:width => 200)%>
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
