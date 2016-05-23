@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  delete 'logout' => 'devise/sessions#destroy'
 
   devise_for :users
   resources :recipes

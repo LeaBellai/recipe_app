@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+background: url(<%= asset_path 'background.jpeg' %>)

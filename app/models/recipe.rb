@@ -1,7 +1,5 @@
 class Recipe < ActiveRecord::Base
 	
-	belongs_to :user
-	
 	validates :name, presence: true, length: { minimum: 2} 
 	mount_uploader :picture, PictureUploader
 
@@ -12,4 +10,6 @@ class Recipe < ActiveRecord::Base
 			minutes_to_cook
 		end
 	end
+
+	belongs_to :user
 end

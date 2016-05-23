@@ -13,16 +13,16 @@
  *= require_tree .
  *= require_self
  */
-.my-container {
-    position: relative;
 
+body {
+  background-image: url('background.jpeg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.my-container img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.4;
+#fade {
+  background: rgba(225,225,225,.9);
 }
+
